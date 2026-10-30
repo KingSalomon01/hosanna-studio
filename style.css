@@ -1,0 +1,22 @@
+:root { --fond: #ffffff; --texte: #1f1a14; --doux: #5f5648; --lien: #a8560a; --bord: #e2d8c8; --ambre: #f0a030; --nuit: #120e08; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #120e08; --texte: #f3ece0; --doux: #b9ad99; --lien: #f0a030; --bord: #3a2f22; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 16px/1.65 "Segoe UI", system-ui, sans-serif; }
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+header .nom { font: 700 18px/1 Georgia, "Noto Serif", serif; letter-spacing: 0.23em; color: var(--ambre); text-decoration: none; }
+nav a { margin-left: 16px; }
+a { color: var(--lien); }
+h1 { font-size: 28px; line-height: 1.25; margin: 32px 0 8px; }
+h2 { font-size: 19px; margin: 28px 0 6px; }
+.maj { color: var(--doux); font-size: 14px; }
+.youtube { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--bord); border-radius: 8px; padding: 8px 12px; margin: 16px 0; }
+.youtube .pastille { width: 22px; height: 16px; background: #ff0000; border-radius: 4px; position: relative; flex: none; }
+.youtube .pastille::after { content: ""; position: absolute; left: 8px; top: 4px; border-left: 7px solid #fff; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--bord); padding: 6px 8px; text-align: left; vertical-align: top; }
+code { font-size: 14px; overflow-wrap: anywhere; }
+footer { border-top: 1px solid var(--bord); margin-top: 48px; padding-top: 16px; padding-bottom: 32px; color: var(--doux); font-size: 14px; }
+footer a { margin-right: 16px; }
